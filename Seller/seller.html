@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Medico</title>
+        <link rel="stylesheet" href="seller.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+ </head>
+ <body>
+    <!-- Add 'active' class initially -->
+    <!-- <div class="medicine-card">
+        <div class="medicine-description active"> 
+            <img src="medicine-image.jpg" alt="Medicine Image">
+            <h2>Medicine Name</h2>
+            <p><strong>Dose:</strong> 1 tablet</p>
+            <p><strong>Type:</strong> Painkiller</p>
+            <p><strong>Price:</strong> &#x20b9; 300.00</p>
+            <p><strong>Description:</strong>Lorem accusamuminima tempore, cupiditate repellat neque commodi ad dolore?</p>
+        </div>
+    </div>
+
+    <button class="toggle-button">Hide</button> -->
+
+   <header class="hippo">
+    <a href="#" class="loli">Medico </a>
+    <nav class="navbajar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#footer">Contact</a>
+    </nav>
+    <a href="#" class="bootop"></a>
+    <div id="noobop" class="fas fa-bars"></div>
+       </header>
+       <br>
+       <br>
+       <!-- this id main is used for only background image -->
+              <div id="main">       
+            </div>
+           <br>
+        <!-- Section-->
+        <div id="addbutton">
+            <a  class="bu"href="#">Add Medicine</a> 
+            <!-- <button class="bu"><i class="fa-solid fa-plus"></i>Add Medicine</button>
+           <button class="bu"> <i class="fa-solid fa-plus"></i></button> -->
+        </div>  
+           <!-- this is css for the box 450*300 -->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                       <!-- Here end the css for box -->
+                                <!-- Here we can copy below code & create new box -->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fs-1">Medicine 3</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="fs-2 text-decoration-none">&#x20b9; 300.00</span>
+                                </div>
+                                  <!-- Product actions-->
+                                <br>
+                                <div class="product-card">
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-primary btn-sm-outline-dark mt-auto fs-3" href="#">View Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                         <div class="text-center"><a class="btn btn-primary btn-sm-outline-dark mt-auto fs-3" href="#">Buy</a></div>
+                                     </div>
+                                 </div>
+                             </div>               
+                            </div>     
+                            </div>
+                      <!-- Copy aya sudi no code for new box -->
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; The Error List</p></div>
+        </footer>
+<!-- It is used to display the view button like medicne name type -->
+<script>
+    const toggleButton = document.querySelector('.toggle-button');
+    const description = document.querySelector('.medicine-description');
+
+    toggleButton.addEventListener('click', function() {
+        if (description.classList.contains('active')) {
+            description.classList.remove('active');
+            toggleButton.textContent = 'View-Description';
+        } else {
+            description.classList.add('active');
+            toggleButton.textContent = 'Hide-Description';
+        }
+    });
+</script>
+    </body>
+</html>
