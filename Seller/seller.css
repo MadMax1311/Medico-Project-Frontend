@@ -1,0 +1,141 @@
+:root{
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  
+}
+
+html{
+  font-size: 62.5%;
+  
+}
+
+.hippo{
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.hippo .loli{
+  font-size: 4.0rem;
+  font-weight: bolder;
+  color: var(--black);
+  text-decoration: none;
+}
+/* 
+.hippo .daba {
+  height: 45px;
+} */
+
+.hippo .navbajar a{
+  font-size: 1.7rem;
+  color: var(--black);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.hippo .navbajar a:hover{
+  color: var(--primary);
+  --primary:#0b5ed7;
+}
+
+.hippo .bootop{
+  margin-top: 0;
+}
+
+#noobop{
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-left: 1.7rem;
+  display: none;
+  --white:#fff;
+}
+#addbutton {
+    position: absolute;
+    right: 70px;
+    top: 750px;
+    display: inline-block;
+
+}
+.bu {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px;
+  text-decoration: none;
+}
+/* .button__text,
+.button__icon{
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+} */
+/* #additem{
+} */
+
+#addbutton :hover{
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  /* focus-shadow-rgb: 49,132,253; */
+  /* padding: 2px; */
+}
+#main{
+	height: 600px;
+	border-radius: 5px;
+	width: 1400px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(piils.jpg);
+	background-size: cover;
+	align-items: center;
+}
+
+.medicine-card {
+  position: absolute;
+  left: 625px;
+  top: 800px;
+  z-index: 500;
+  width: 275px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+.medicine-description {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.medicine-description.active {
+  max-height: 500px; /* Adjust as needed */
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1100px; /* Adjust vertical position as needed */
+  left: 690px; /* Adjust horizontal position as needed */
+  z-index: 1;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+.toggle-button:hover{
+  background-color: #0b5ed7;
+  border-color: #0a58ca; 
+}
