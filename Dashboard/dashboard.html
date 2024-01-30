@@ -1,0 +1,239 @@
+<!-- line 91 home button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- My CSS -->
+	<link rel="stylesheet" href="dashboard.css">
+	<title>Admin Panel</title>
+</head>
+<body>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<pre> <i class="fa-solid fa-user"></i></pre>
+			<span class="text"><pre>  Welcome, Admin</pre></span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<pre><i class='bx bxs-dashboard' ></i></pre>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<pre>   <i class="fa-solid fa-calendar-check"></i></pre>
+					<span class="text"><pre>  Appointment</pre></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<pre>   <i class="fa-solid fa-hospital-user"></i></pre>
+					<span class="text"><pre>  Patients</pre></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<pre>   <i class="fa-solid fa-user-doctor"></i></pre>
+					<span class="text"><pre>  Doctors</pre></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<pre>   <i class="fa-solid fa-person"></i></pre>
+					<span class="text"><pre>  Sellers</pre></span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<nav>
+			<!-- <i class='bx bx-menu' ></i> -->
+			<!-- <a href="#" class="nav-link">Categories</a> -->
+			<form action="#">
+				<div class="form-input">
+					<!-- <input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button> -->
+				</div>
+			</form>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<!-- here the home button -->
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				<ul class="box-info">
+						<li>
+					<i class="fa-solid fa-calendar-check"></i>
+					<span class="text">
+						<h3>2834+</h3>
+						<p>Appointments</p>
+					</span>
+				</li>
+				<li>
+					 <i class="fa-solid fa-hospital-user"></i>
+
+					 <!-- patients can add here -->
+					<span class="text">
+						<h3>2000+</h3>
+						<p>Patients</p>
+					</span>
+				</li>
+				<li>
+					<i class="fa-solid fa-user-doctor"></i>
+					<span class="text">
+						<h3>500+</h3>
+						<p>Doctors</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Orders</h3>
+						<!-- <i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i> -->
+
+
+						<!-- The patients can add here -->
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date Order</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>Maze Jack</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<!-- <img src="img/people.png"> -->
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- The to do list start here -->
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Add a new task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="task-list-container">
+                <ul id="taskList">
+                    <!-- Tasks will be added here dynamically -->
+                </ul>
+            </div>
+        </div>
+		<script>
+			let taskCounter = 1; // Initialize a counter for serial numbers
+
+			function addTask() {
+				const taskInput = document.getElementById("taskInput");
+				const taskText = taskInput.value.trim();
+
+				if (taskText === "") {
+					return; // Don't add empty tasks
+				}
+
+				const taskList = document.getElementById("taskList");
+				const newTask = document.createElement("li");
+				newTask.innerHTML = `
+					<span>${taskCounter}. ${taskText}</span>
+					<span class="remove-button" onclick="removeTask(this)">X</span>
+				`;
+
+				taskList.appendChild(newTask);
+				taskInput.value = ""; // Clear the input field
+				taskCounter++; // Increment the counter for the next task
+			}
+
+			function removeTask(button) {
+				const taskList = document.getElementById("taskList");
+				const taskItem = button.parentElement;
+				taskList.removeChild(taskItem);
+				
+				// Reset the taskCounter after removing a task
+				taskCounter = 1;
+				const taskItems = taskList.querySelectorAll("li");
+				taskItems.forEach((item, index) => {
+					item.querySelector("span").textContent = `${index + 1}. ${item.querySelector("span").textContent.split(". ")[1]}`;
+				});
+			}
+		</script>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	<script src="dashboard.js"></script>
+</body>
+</html>
